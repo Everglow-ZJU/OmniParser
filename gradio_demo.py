@@ -14,7 +14,8 @@ from PIL import Image
 
 yolo_model = get_yolo_model(model_path='weights/icon_detect/best.pt')
 caption_model_processor = get_caption_model_processor(model_name="florence2", model_name_or_path="weights/icon_caption_florence")
-platform = 'pc'
+# platform = 'pc'
+platform = 'mobile'
 if platform == 'pc':
     draw_bbox_config = {
         'text_scale': 0.8,
@@ -105,4 +106,4 @@ with gr.Blocks() as demo:
     )
 
 # demo.launch(debug=False, show_error=True, share=True)
-demo.launch(share=True, server_port=7861, server_name='0.0.0.0')
+demo.launch(share=False, server_port=7861, server_name='0.0.0.0')

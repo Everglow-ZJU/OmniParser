@@ -18,7 +18,8 @@ import numpy as np
 # %matplotlib inline
 from matplotlib import pyplot as plt
 import easyocr
-reader = easyocr.Reader(['en'])
+# reader = easyocr.Reader(['en'])
+reader = easyocr.Reader(['ch_sim','en'])
 import time
 import base64
 
