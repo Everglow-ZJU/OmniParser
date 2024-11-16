@@ -2,6 +2,6 @@ weights/icon_caption_blip2
 weights/icon_caption_florence
 weights/icon_detect/
 .gradio
-__pycache__
+__pycache__/*
 weights/.cache
-util/__pycache__
+util/__pycache__/*
